@@ -17,3 +17,4 @@ use App\Http\Controllers\NetflixController;
 Route::get('/', 
 [NetflixController::class, 'index']);
 
+//Route::get('/films/{films}',)
