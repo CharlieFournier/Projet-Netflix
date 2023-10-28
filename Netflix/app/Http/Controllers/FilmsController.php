@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-//use App\Models\Film;
 
-class NetflixController extends Controller
+class FilmsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('Netflix.index');
+        return view('Films.index');
     }
 
     /**

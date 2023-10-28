@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\NetflixController;
+use App\Http\Controllers\FilmsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +15,6 @@ use App\Http\Controllers\NetflixController;
 */
 
 Route::get('/', 
-[NetflixController::class, 'index']);
+[FilmsController::class, 'index'])->name('films.index');
 
 //Route::get('/films/{films}',)
