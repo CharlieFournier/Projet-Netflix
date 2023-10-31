@@ -10,6 +10,7 @@ class FilmsSeeder extends Seeder
 {
     public function run(): void
     {
+
         DB::table('films')->insert([
             [
                 'id' => 1,
