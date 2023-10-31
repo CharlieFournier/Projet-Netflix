@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('films', function (Blueprint $table) {
             $table->id();
             $table->string('titre',100);
-            $table->string('resumer', '2000');
+            $table->string('resumer', '500');
             $table->integer('duree');//tout en minute convertir avec modulo 60.
             $table->year('annee');
 
