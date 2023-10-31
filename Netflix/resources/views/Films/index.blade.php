@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>netflix</p>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title','Page Accueil Netflix')
+
+@section('contenu')
+    <h1>Netflix</h1>
+@endsection
