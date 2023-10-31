@@ -99,7 +99,7 @@ class FilmsSeeder extends Seeder
                 'realisateur' => 7,
                 'producteur' => 7,
                 'lienFilm' => 7,
-                'pochetteURL' => 'https://www.google.ca/url?sa=i&url=https%3A%2F%2Fthedigitalbits.com%2Fcolumns%2Fmy-two-cents%2F081723-0700&psig=AOvVaw1y4ocG4WHGtbiJijLstCpd&ust=1698872114965000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCMiav_qVoYIDFQAAAAAdAAAAABAR',
+                'pochetteURL' => 'https://th.bing.com/th/id/R.064062682c34025ea067c710c3269dc8?rik=cPowMT6mWxlaiA&riu=http%3a%2f%2fsharethegoodnews.org%2fwp-content%2fuploads%2f2022%2f08%2f5-reasons-to-see-Prey-the-new-and-great-Predator.jpeg&ehk=KHBqSO3x74sNu1hgAdfAO6VnaChmllVYstW6gb95Cs0%3d&risl=&pid=ImgRaw&r=0',
                 'rating' => 94,
                 'type_id' => 7,
             ],
