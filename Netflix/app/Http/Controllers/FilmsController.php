@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Film;
 
 class FilmsController extends Controller
 {
@@ -12,7 +13,8 @@ class FilmsController extends Controller
      */
     public function index()
     {
-        return view('Films.index');
+        $films = Film::all();
+        return view('Films.index', compact('films'));
     }
 
     /**
