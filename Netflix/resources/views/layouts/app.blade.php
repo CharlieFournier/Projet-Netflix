@@ -16,11 +16,11 @@
         <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
       </div>      
       <nav class="main-nav">                
-        <a href="#home">Home</a>
+        <a href="/">Home</a>
         <a href="/Personnage">Acteurs</a>
-        <a href="#tvShows">New release</a>
-        <a href="#movies">Horreur</a>
-        <a href="#originals">Action</a>
+        <a href="#">New release</a>
+        <a href="#">Horreur</a>
+        <a href="#">Action</a>
         <a href="#">Comédie</a>
         <a href="#">Plus Populaire</a>
         <a href="#">Moins Populaire</a>     
