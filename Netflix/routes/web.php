@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FilmsController;
+use App\Http\Controllers\PersonnesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,9 @@ Route::get('/',
 [FilmsController::class, 'index'])->name('films.index');
 
 Route::get('/show', 
-[PersonnesController::class, 'Show'])->name('films.show');
+[FilmsController::class, 'Show'])->name('films.show');
+
+Route::get('/Personnage', 
+[PersonnesController::class, 'index'])->name('personnes.index');
 
 //Route::get('/films/{films}',)

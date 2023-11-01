@@ -17,7 +17,7 @@
       </div>      
       <nav class="main-nav">                
         <a href="#home">Home</a>
-        <a href="#home">Acteurs</a>
+        <a href="/Personnage">Acteurs</a>
         <a href="#tvShows">New release</a>
         <a href="#movies">Horreur</a>
         <a href="#originals">Action</a>
