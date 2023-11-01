@@ -30,9 +30,9 @@
       </nav>      
     </header>
     <!-- END OF HEADER -->
-
+    <div style="padding-top: 62px;">
     @yield('contenu')
-
+    </div>
     <!-- FOOTER -->
     <!-- LINKS -->
     <section class="link">

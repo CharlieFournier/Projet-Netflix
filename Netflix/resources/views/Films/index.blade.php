@@ -5,11 +5,15 @@
 @section('contenu')
 
     @if (count($films))
+ text-center">
         @foreach($films as $film)
-            <img src="{{$film->pochetteURL}}" width="200px">
+        
+            <a href="#"><img src="{{$film->pochetteURL}}" width="200px"></a>
+            
         @endforeach
+        </div>
     @else
             <p>il n'y a pas de films</p>
     @endif
-
+ 
 @endsection
