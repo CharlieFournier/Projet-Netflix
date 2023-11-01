@@ -17,4 +17,7 @@ use App\Http\Controllers\FilmsController;
 Route::get('/', 
 [FilmsController::class, 'index'])->name('films.index');
 
+Route::get('/show', 
+[PersonnesController::class, 'Show'])->name('films.show');
+
 //Route::get('/films/{films}',)

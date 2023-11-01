@@ -5,7 +5,8 @@
 @section('contenu')
 
     @if (count($films))
- text-center">
+
+    <div class="box">
         @foreach($films as $film)
         
             <a href="#"><img src="{{$film->pochetteURL}}" width="200px"></a>
