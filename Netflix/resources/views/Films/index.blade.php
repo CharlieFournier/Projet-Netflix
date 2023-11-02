@@ -9,7 +9,7 @@
     <div class="box">
         @foreach($films as $film)
         
-            <a href="#"><img src="{{$film->pochetteURL}}" width="200px"></a>
+            <a href="{{route('film.show' , [$film]) }}"><img src="{{$film->pochetteURL}}" width="200px"></a>
             
         @endforeach
         </div>

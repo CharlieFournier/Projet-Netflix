@@ -36,9 +36,9 @@ class FilmsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Film $film)
     {
-        //
+        return view('Films.show', compact('film'));
     }
 
     /**

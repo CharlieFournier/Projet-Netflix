@@ -1,11 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title','Page Accueil Netflix')
+
+@section('contenu')
+
+    <h1> ZOOM SUR LE FILM </h1>
+    <h2> sous-titre </h2>
+
+    @if (count($film))
+
+    <h1>{{film->titre}}</h1>
+
+
+    @else
+            <p>il n'y a pas de films</p>
+    @endif
+ 
+@endsection

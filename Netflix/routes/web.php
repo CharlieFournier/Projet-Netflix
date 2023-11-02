@@ -20,8 +20,8 @@ use App\Http\Controllers\PersonnesController;
 Route::get('/', 
 [FilmsController::class, 'index'])->name('films.index');
 
-Route::get('/show', 
-[FilmsController::class, 'Show'])->name('films.show');
+Route::get('/show/{film}', 
+[FilmsController::class, 'show'])->name('film.show');
 
 Route::get('/Personnage', 
 [PersonnesController::class, 'index'])->name('personnes.index');
