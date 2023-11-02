@@ -15,6 +15,8 @@ use App\Http\Controllers\PersonnesController;
 |
 */
 
+// de quoi de simple
+
 Route::get('/', 
 [FilmsController::class, 'index'])->name('films.index');
 
