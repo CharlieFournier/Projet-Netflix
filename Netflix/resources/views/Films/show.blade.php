@@ -4,16 +4,8 @@
 
 @section('contenu')
 
-    <h1> ZOOM SUR LE FILM </h1>
-    <h2> sous-titre </h2>
+    <h1>{{$film->titre}}</h1>
 
-    @if (count($film))
+    <img src="{{$film->pochetteURL}}">
 
-    <h1>{{film->titre}}</h1>
-
-
-    @else
-            <p>il n'y a pas de films</p>
-    @endif
- 
 @endsection
