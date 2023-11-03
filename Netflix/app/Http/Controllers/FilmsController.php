@@ -36,8 +36,9 @@ class FilmsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Film $film)
+    public function show($filmTitre)
     {
+        $film = Film::where('titre', $filmTitre)->firstOrFail();
         return view('Films.show', compact('film'));
     }
 
