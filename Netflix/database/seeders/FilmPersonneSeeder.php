@@ -12,6 +12,11 @@ class FilmPersonneSeeder extends Seeder
      */
     public function run(): void
     {
-        //
-    }
+        DB::table('FilmPersonnes')->insert([
+            [
+                'id' => 1,
+                'Film.id' => 1,
+                'Personnes.id' => 1,
+            ],
+        ]); }
 }
