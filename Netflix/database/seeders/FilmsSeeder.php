@@ -80,7 +80,7 @@ class FilmsSeeder extends Seeder
             [
                 'id' => 6,
                 'titre' => 'mortal Kombat',
-                'resumer' => 'Dans « Mortal Kombat », le combattant de MMA Cole Young, habitué à prendre des coups pour de l’argent, n’est pas au courant de son héritage - ou pourquoi l’empereur de l’Outre-Monde Shang Tsung a envoyé son meilleur guerrier, Sub-Zero, un cryomancien d’un autre monde, pour traquer Cole.',
+                'resumer' => 'Dans « Mortal Kombat », le combattant de MMA Cole Young, habitué à prendre des coups pour de l\'argent, n\'est pas au courant de son héritage - ou pourquoi l’empereur de l’Outre-Monde Shang Tsung a envoyé son meilleur guerrier, Sub-Zero, un cryomancien d’un autre monde, pour traquer Cole.',
                 'duree' => 110,
                 'annee' => 2021,
                 'realisateur' => 5,

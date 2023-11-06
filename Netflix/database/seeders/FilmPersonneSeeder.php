@@ -16,7 +16,7 @@ class FilmPersonneSeeder extends Seeder
             [
                 'id' => 1,
                 'Film.id' => 1,
-                'Personnes.id' => 1,
-            ],
+                'Personnes.id' => 1
+            ]
         ]); }
 }
