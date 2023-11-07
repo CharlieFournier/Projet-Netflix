@@ -36,9 +36,10 @@ class PersonnesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($personneNom)
     {
-        //
+                $personne = Film::where('nom', $personneNom)->firstOrFail();
+                return view('Personnes.show', compact('personne'));
     }
 
     /**

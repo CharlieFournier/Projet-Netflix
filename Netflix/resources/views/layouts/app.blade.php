@@ -19,7 +19,7 @@
       </div>      
       <nav class="main-nav">                
         <a href="/">Home</a>
-        <a href="/Personnage">Acteurs</a>
+        <a href="/Personne">Acteurs</a>
         <a href="#">New release</a>
         <a href="#">Horreur</a>
         <a href="#">Action</a>

@@ -9,7 +9,7 @@
     <div class="box">
         @foreach($personnes as $personne)
         
-            <a href="#"><img src="{{$personne->photo}}" width="200px"></a>
+        <a href="{{route('personnes.show', [$personne->nom])}}"><img src="{{$personne->photo}}" width="200px"></a>
             
         @endforeach
         </div>

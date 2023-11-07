@@ -23,7 +23,10 @@ Route::get('/',
 Route::get('/show/{film}', 
 [FilmsController::class, 'show'])->name('film.show');
 
-Route::get('/Personnage', 
+Route::get('/Personne', 
 [PersonnesController::class, 'index'])->name('personnes.index');
+
+Route::get('/show/{Personne}', 
+[PersonnesController::class, 'show'])->name('personnes.show');
 
 //Route::get('/films/{films}',)
