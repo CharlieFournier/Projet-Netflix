@@ -4,8 +4,23 @@
 
 @section('contenu')
 
-    <h1>{{$film->titre}}</h1>
+<div class="container-fluid align-item-center text-center">
+    <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+    <div class="card">
 
-    <img src="{{$film->pochetteURL}}">
+        <div class="card-header">
+            <h1>{{$film->titre}}</h1>
+        </div>
+
+        <div class="card-body">
+            <img src="{{$film->pochetteURL}}" width="75%" height = 70%>
+        </div>
+    </div>
+    </div>
+    <div class="col-2"></div>
+    </div>
+    </div>
 
 @endsection
