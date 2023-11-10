@@ -29,4 +29,6 @@ Route::get('/Personne',
 Route::get('/show/{Personne}', 
 [PersonnesController::class, 'show'])->name('personnes.show');
 
+
+
 //Route::get('/films/{films}',)
