@@ -42,8 +42,8 @@ class FilmsController extends Controller
         return view('Films.show', compact('film'));
     }
 
-    public function films(){
-        return $this -> belongsToMany()(Film::class);
+    public function acteurs(){
+        return $this -> belongsToMany()(Personne::class);
     }
 
     /**
