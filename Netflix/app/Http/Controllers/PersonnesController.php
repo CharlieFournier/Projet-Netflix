@@ -38,8 +38,8 @@ class PersonnesController extends Controller
      */
     public function show($personneNom)
     {
-                $personne = Film::where('nom', $personneNom)->firstOrFail();
-                return view('Personnes.show', compact('personne'));
+        $personne = Personne::where('nom', $personneNom)->firstOrFail();
+        return view('Personnes.show', compact('personne'));
     }
 
     /**
