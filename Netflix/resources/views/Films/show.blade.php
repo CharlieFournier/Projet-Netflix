@@ -22,9 +22,8 @@
     <div class="col-2"></div>
     </div>
     </div>
-
     @foreach($film->acteurs as $acteur)
-                <a href="{{route('personne.show', [$acteur])}}">
+                <a href="{{route('personnes.show', [$acteur->nom])}}">
                     <img src="{{$acteur->photo}}" alt="" width="150px" height="150px">
                 </a>
                 @endforeach
