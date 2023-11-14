@@ -73,7 +73,7 @@ class PersonnesSeeder extends Seeder
                 'id' => 10,
                 'nom' => 'Lilly Watchwoski',
                 'date' => '1967-12-29',
-                'photo' => 'https://m.media-amazon.com/images/M/MV5BMjEzMTc2MDQ5OV5BMl5BanBnXkFtZTcwNjkzNDY0OA@@._V1_.jpg'
+                'photo' => 'https://media.them.us/photos/5fa09cf7fd7a2bab06d4a061/16:9/w_1280,c_limit/GettyImages-1159247758%20(1).jpg'
             ],
             [
                 'id' => 11,
