@@ -23,4 +23,10 @@
     </div>
     </div>
 
+    @foreach($film->personnes as $acteur)
+                <a href="{{route('personne.show', [$acteur])}}">
+                    <img src="{{$acteur->photo}}" alt="" width="150px" height="150px">
+                </a>
+                @endforeach
+
 @endsection
