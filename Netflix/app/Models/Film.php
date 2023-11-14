@@ -9,8 +9,9 @@ class Film extends Model
 {
     protected $table = 'films';
     use HasFactory;
-}
+
 
 function acteurs(){
-    return $this -> belongsToMany()(Personne::class);
+    return $this->belongsToMany(Personne::class);
+}
 }
