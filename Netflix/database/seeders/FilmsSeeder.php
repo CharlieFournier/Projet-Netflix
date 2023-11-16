@@ -21,7 +21,7 @@ class FilmsSeeder extends Seeder
                 'realisateur' => 1,
                 'producteur' => 1,
                 'lienFilm' => 1,
-                'pochetteURL' => 'https://th.bing.com/th/id/OIP.6FYMlvP9amgL4K2KxkiwvgHaKO?w=198&h=274&c=7&r=0&o=5&pid=1.7',
+                'pochetteURL' => 'https://th.bing.com/th/id/OIP.9A8Kk14lr7Mxkc0n0ig8tAHaKZ?rs=1&pid=ImgDetMain',
                 'rating' => 82,
                 'type_id' => 1,
             ],
