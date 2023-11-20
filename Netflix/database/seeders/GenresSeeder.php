@@ -14,9 +14,12 @@ class GenresSeeder extends Seeder
     {
         DB::table('genres')->insert([
         ['genre' => 'Science Fiction'],
+        ['genre' => 'Superhero'],
+        ['genre' => 'Fantaisie'],
         ['genre' => 'Horreur'],
         ['genre' => 'Action'],
-        ['genre' => 'Comedie']
+        ['genre' => 'Comedie'],
+        ['genre' => 'Drama']
         ]); 
 
     }
