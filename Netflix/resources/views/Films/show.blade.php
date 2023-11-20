@@ -28,4 +28,9 @@
                 </a>
                 @endforeach
 
+    
+    @foreach($film->genres as $genre)
+    <p>{{$genre->genre}}</p>
+    @endforeach
+
 @endsection
