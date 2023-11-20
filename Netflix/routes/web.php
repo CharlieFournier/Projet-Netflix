@@ -23,6 +23,12 @@ Route::get('/',
 Route::get('/film/show/{film}', 
 [FilmsController::class, 'show'])->name('film.show');
 
+Route::get('/film/creation', 
+[FilmsController::class, 'create'])->name('films.create');
+
+Route::post('/film', 
+[FilmsController::class, 'store'])->name('films.store');
+
 Route::get('/Personne', 
 [PersonnesController::class, 'index'])->name('personnes.index');
 
