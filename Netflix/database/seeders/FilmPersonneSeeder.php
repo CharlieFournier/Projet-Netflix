@@ -116,5 +116,6 @@ class FilmPersonneSeeder extends Seeder
                 'film_id' => 9,
                 'personne_id' => 20
             ]
-        ]); }
+        ]); 
+    }
 }
