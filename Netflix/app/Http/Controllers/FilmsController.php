@@ -32,16 +32,16 @@ class FilmsController extends Controller
      */
     public function store(Request $request)
     {
-               try {
-                        $film = new Film($request->all());
-                        $film->save();
-                    }
+        try {
+            $film = new Film($request->all());
+            Log::debug($film);
+            $film->save();
+                }
                 
-                    catch (\Throwable $e) {
-                        //Gérer l'erreur
-                        Log::debug($e);
-                    }
-                    return redirect()->route('films.index');
+            catch (\Throwable $e) {
+                Log::debug($e);
+            }
+            return redirect()->route('films.index');
     }
 
     /**

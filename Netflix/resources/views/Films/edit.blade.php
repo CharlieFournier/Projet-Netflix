@@ -1,12 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title','Page Accueil Netflix')
+
+@section('contenu')
+
+<h1>modifier un film</h1>
+
+<form method="post" action="{{route('films.store')}}">
+@csrf
+   <div class="form-group">
+      <label for="">Nom du film</label>
+      <input type="text" class="form-control" name="titre">
+
+       <label for="">Resume du film</label>
+       <input type="text" class="form-control" name="resumer">
+
+       <label for="">Duree du film</label>
+       <input type="text" class="form-control" name="duree">
+
+       <label for="">Annee du film</label>
+       <input type="text" class="form-control" name="annee">
+
+       <label for="">Realisateur du film</label>
+       <input type="text" class="form-control" name="realisateur">
+
+       <label for="">Producteur du film</label>
+       <input type="text" class="form-control" name="producteur">
+
+       <label for="">lien du film</label>
+       <input type="text" class="form-control" name="lienFilm">
+
+       <label for="">Url du film</label>
+       <input type="text" class="form-control" name="pochetteURL">
+
+       <label for="">Rating du film</label>
+       <input type="text" class="form-control" name="rating">
+
+
+       
+   </div>
+
+<button type="submit" class="btn btn-primary">Enregistrer</button>
+</form>
+
+ 
+@endsection

@@ -27,9 +27,8 @@ return new class extends Migration
             $table->string('pochetteURL',1000);
             $table->double('rating');
 
-            $table->unsignedBigInteger('type_id');
-            $table->foreign('type_id')->references('id')->on('personnes');
-
+            $table->unsignedBigInteger('type_id')->nullable();
+            $table->foreign('type_id')->references('id')->on('personnes')->nullable();
             $table->timestamps();
         });
     }
