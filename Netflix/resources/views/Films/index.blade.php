@@ -17,6 +17,5 @@
             <p>il n'y a pas de films</p>
     @endif
 
-    
 
 @endsection

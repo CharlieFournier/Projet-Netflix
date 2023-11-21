@@ -36,4 +36,3 @@ Route::get('/Personne',
 Route::get('/acteur/show/{Personne}', 
 [PersonnesController::class, 'show'])->name('personnes.show');
 
-//Route::get('/films/{films}',)
