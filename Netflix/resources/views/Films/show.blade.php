@@ -33,4 +33,13 @@
     <p>{{$genre->genre}}</p>
     @endforeach
 
+
+
+    <form method="POST" action="{{route('films.destroy', [$film->id]) }}">
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="btn btn-danger">Supprimer</button>
+</form>
+
+
 @endsection

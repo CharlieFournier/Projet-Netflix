@@ -9,6 +9,7 @@
 <form method="post" action="{{route('films.store')}}">
 @csrf
    <div class="form-group">
+      
       <label for="">Nom du film</label>
       <input type="text" class="form-control" name="titre">
 
@@ -35,8 +36,6 @@
 
        <label for="">Rating du film</label>
        <input type="text" class="form-control" name="rating">
-
-
        
    </div>
 
