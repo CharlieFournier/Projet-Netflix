@@ -50,23 +50,45 @@ class FilmsController extends Controller
     public function show($filmTitre)
     {
         $film = Film::where('titre', $filmTitre)->firstOrFail();
-        return view('Films.show', compact('film'));
+        return view('films.show', compact('film'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($filmTitre)
     {
-        //
+        $film = Film::where('titre', $filmTitre)->firstOrFail();
+        return View('films.edit', compact('film'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(FilmRequest $request, Film $film)
     {
-        //
+        try{
+                $film->titre = $request->titre;
+                $film->resumer = $request->resumer;
+                $film->duree = $request->duree;
+                $film->annee = $request->annee;
+                $film->realisateur = $request->realisateur;
+                $film->producteur = $request->producteur;
+                $film->lienFilm = $request->lienFilm;
+                $film->pochetteURL = $request->pochetteURL;
+                $film->rating = $request->rating;
+
+
+                $film->save();
+                return redirect()->route('films.index')->with('message', "Modification de " . $film->nom . " réussi!");
+            }
+            catch(\Throwable $e){
+                //Gérer l'erreur
+                Log::debug($e);
+                return redirect()->route('films.index')->withErrors(['la modification n\'a pas fonctionné']); 
+            }
+            return redirect()->route('films.index');
+            
     }
 
     /**
@@ -75,19 +97,19 @@ class FilmsController extends Controller
     public function destroy(string $id)
     {
         try{
-                $film = Film::findOrFail($id);
-
-                $film->acteurs()->detach();
-                        
-                  $film->delete();
-                               return redirect()->route('films.index')->with('message', "Suppression de " . $film->nom . " réussi!");
-                }
-                catch(\Throwable $e){
-                   //Gérer l'erreur
-                   Log::debug($e);
-                   return redirect()->route('films.index')->withErrors(['la suppression n\'a pas fonctionné']); 
-                 }
-                    return redirect()->route('films.index');
+            $film = Film::findOrFail($id);
+            
+            $film->acteurs()->detach();
+                    
+              $film->delete();
+                           return redirect()->route('films.index')->with('message', "Suppression de " . $film->nom . " réussi!");
+            }
+            catch(\Throwable $e){
+               //Gérer l'erreur
+               Log::debug($e);
+               return redirect()->route('films.index')->withErrors(['la suppression n\'a pas fonctionné']); 
+             }
+                return redirect()->route('films.index');
             
     }
 }

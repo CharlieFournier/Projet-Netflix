@@ -33,12 +33,15 @@
     <p>{{$genre->genre}}</p>
     @endforeach
 
-
+    <a href="{{ route('films.edit', [$film->titre]) }}" class="btn btn-primary">
+        Editer le film
+    </a>
 
     <form method="POST" action="{{route('films.destroy', [$film->id]) }}">
     @csrf
     @method('DELETE')
     <button type="submit" class="btn btn-danger">Supprimer</button>
+    
 </form>
 
 

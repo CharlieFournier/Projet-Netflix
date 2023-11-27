@@ -33,6 +33,11 @@ Route::post('/film',
 Route::delete('/films/{id}',
 [FilmsController::class, 'destroy'])->name('films.destroy');
 
+Route::get('/films/modifier/{film}', 
+[FilmsController::class, 'edit'])->name('films.edit');
+
+Route::patch('/films/modifier/{film}',
+[FilmsController::class, 'update'])->name('films.update');
 
 Route::get('/Personne', 
 [PersonnesController::class, 'index'])->name('personnes.index');

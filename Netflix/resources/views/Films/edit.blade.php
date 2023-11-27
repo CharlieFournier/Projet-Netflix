@@ -6,10 +6,11 @@
 
 <h1>modifier un film</h1>
 
-<form method="post" action="{{route('films.store')}}">
+<form method="post" action="{{route('films.update', [$film->titre])}}">
 @csrf
+ @method('PATCH')
    <div class="form-group">
-      
+
       <label for="">Nom du film</label>
       <input type="text" class="form-control" name="titre">
 
