@@ -19,13 +19,12 @@
 
 
     @if (count($films))
-    <div class="box">
     @foreach($genres as $genre)
 
         @foreach($genre->films as $film)
 
         <h1> {{$genre->genre}}</h1>
-
+        <div class="box">
 
                 <a href="{{route('film.show', [$film->titre])}}">    <img src="{{$film->pochetteURL}}" alt="" width="200px"> </a>
 
