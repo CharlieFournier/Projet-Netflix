@@ -27,7 +27,7 @@
         <a href="#">Plus Populaire</a>
         <a href="#">Moins Populaire</a>
         <a href="/film/creation">test ajout film</a>    
-        <a href="">test ajout acteur</a>         
+        <a href="/acteur/creation">test ajout acteur</a>         
       </nav>
       <nav class="sub-nav">
         <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>

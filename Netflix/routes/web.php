@@ -39,9 +39,15 @@ Route::get('/films/modifier/{film}',
 Route::patch('/films/modifier/{film}',
 [FilmsController::class, 'update'])->name('films.update');
 
-Route::get('/Personne', 
+Route::get('/acteur', 
 [PersonnesController::class, 'index'])->name('personnes.index');
 
 Route::get('/acteur/show/{Personne}', 
 [PersonnesController::class, 'show'])->name('personnes.show');
+
+Route::get('/acteur/creation', 
+[PersonnesController::class, 'create'])->name('personnes.create');
+
+Route::post('/acteur', 
+[PersonnesController::class, 'store'])->name('personnes.store');
 

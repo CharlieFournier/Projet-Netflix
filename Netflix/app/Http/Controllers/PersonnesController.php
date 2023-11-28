@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Personne;
@@ -22,7 +23,7 @@ class PersonnesController extends Controller
      */
     public function create()
     {
-        //
+        return View('Personnes.create');
     }
 
     /**
@@ -30,7 +31,16 @@ class PersonnesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $personnes = new Personne($request->all());
+            Log::debug($personnes);
+            $personnes->save();
+                }
+                
+            catch (\Throwable $e) {
+                Log::debug($e);
+            }
+            return redirect()->route('personnes.index');
     }
 
     /**
