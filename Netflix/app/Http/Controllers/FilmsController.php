@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Film;
+use App\Models\Genre;
+
 
 class FilmsController extends Controller
 {
@@ -16,7 +18,9 @@ class FilmsController extends Controller
     public function index()
     {
         $films = Film::all();
-        return view('Films.index', compact('films'));
+        $genres = Genre::all();
+
+        return view('Films.index', compact('films','genres'));
     }
 
     /**
