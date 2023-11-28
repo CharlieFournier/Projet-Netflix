@@ -29,9 +29,6 @@
        <label for="">Producteur du film</label>
        <input type="text" class="form-control" name="producteur">
 
-       <label for="">lien du film</label>
-       <input type="text" class="form-control" name="lienFilm">
-
        <label for="">Url du film</label>
        <input type="text" class="form-control" name="pochetteURL">
 

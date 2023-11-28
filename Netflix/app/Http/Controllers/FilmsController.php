@@ -65,8 +65,9 @@ class FilmsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(FilmRequest $request, Film $film)
+    public function update(Request $request, $filmTitre)
     {
+        $film = Film::where('titre', $filmTitre)->firstOrFail();
         try{
                 $film->titre = $request->titre;
                 $film->resumer = $request->resumer;
@@ -74,7 +75,6 @@ class FilmsController extends Controller
                 $film->annee = $request->annee;
                 $film->realisateur = $request->realisateur;
                 $film->producteur = $request->producteur;
-                $film->lienFilm = $request->lienFilm;
                 $film->pochetteURL = $request->pochetteURL;
                 $film->rating = $request->rating;
 

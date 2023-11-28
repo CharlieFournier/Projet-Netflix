@@ -73,6 +73,21 @@ class PersonnesController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        try{
+            $personne = Personne::findOrFail($id);
+            
+            $personne->films()->detach();
+                    
+              $personne->delete();
+                           return redirect()->route('personnes.index')->with('message', "Suppression de " . $personne->nom . " réussi!");
+            }
+            catch(\Throwable $e){
+               //Gérer l'erreur
+               Log::debug($e);
+               return redirect()->route('personnes.index')->withErrors(['la suppression n\'a pas fonctionné']); 
+             }
+                return redirect()->route('personnes.index');
+            
     }
+    
 }

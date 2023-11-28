@@ -51,3 +51,6 @@ Route::get('/acteur/creation',
 Route::post('/acteur', 
 [PersonnesController::class, 'store'])->name('personnes.store');
 
+Route::delete('/acteur/{id}',
+[PersonnesController::class, 'destroy'])->name('personnes.destroy');
+

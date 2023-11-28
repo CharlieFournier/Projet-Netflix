@@ -20,10 +20,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2010,
                 'realisateur' => 1,
                 'producteur' => 1,
-                'lienFilm' => 1,
                 'pochetteURL' => 'https://th.bing.com/th/id/OIP.9A8Kk14lr7Mxkc0n0ig8tAHaKZ?rs=1&pid=ImgDetMain',
                 'rating' => 82,
-                'type_id' => 1,
             ],
             [
                 'id' => 2,
@@ -33,10 +31,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2014,
                 'realisateur' => 2,
                 'producteur' => 2,
-                'lienFilm' => 2,
                 'pochetteURL' => 'https://th.bing.com/th/id/OIP.GaeD0arCSn1Nn8wFJH5XyAHaLH?w=121&h=182&c=7&r=0&o=5&pid=1.7',
                 'rating' => 94,
-                'type_id' => 2,
             ],
             [
                 'id' => 3,
@@ -46,10 +42,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2014,
                 'realisateur' => 3,
                 'producteur' => 3,
-                'lienFilm' => 3,
                 'pochetteURL' => 'https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg',
                 'rating' => 73,
-                'type_id' => 3,
             ],
             [
                 'id' => 4,
@@ -59,10 +53,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2020,
                 'realisateur' => 3,
                 'producteur' => 4,
-                'lienFilm' => 4,
                 'pochetteURL' => 'https://m.media-amazon.com/images/M/MV5BOTU4ZmNmMTktYzRkYS00Njc1LTg3ZjQtNDY4MmM0MTE5ZjhmXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg',
                 'rating' => 69,
-                'type_id' => 4,
             ],
             [
                 'id' => 5,
@@ -72,10 +64,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2023,
                 'realisateur' => 4,
                 'producteur' => 5,
-                'lienFilm' => 5,
                 'pochetteURL' => 'https://m.media-amazon.com/images/M/MV5BZWE2ZWE5MDQtMTJlZi00MTVjLTkxOTgtNmNiYjg2NDIxN2NhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg',
                 'rating' => 63,
-                'type_id' => 5,
             ],
             [
                 'id' => 6,
@@ -85,10 +75,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2021,
                 'realisateur' => 5,
                 'producteur' => 6,
-                'lienFilm' => 6,
                 'pochetteURL' => 'https://m.media-amazon.com/images/M/MV5BY2ZlNWIxODMtN2YwZi00ZjNmLWIyN2UtZTFkYmZkNDQyNTAyXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg',
                 'rating' => 55,
-                'type_id' => 6,
             ],
             [
                 'id' => 7,
@@ -98,10 +86,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2014,
                 'realisateur' => 6,
                 'producteur' => 7,
-                'lienFilm' => 7,
                 'pochetteURL' => 'https://th.bing.com/th/id/R.064062682c34025ea067c710c3269dc8?rik=cPowMT6mWxlaiA&riu=http%3a%2f%2fsharethegoodnews.org%2fwp-content%2fuploads%2f2022%2f08%2f5-reasons-to-see-Prey-the-new-and-great-Predator.jpeg&ehk=KHBqSO3x74sNu1hgAdfAO6VnaChmllVYstW6gb95Cs0%3d&risl=&pid=ImgRaw&r=0',
                 'rating' => 94,
-                'type_id' => 7,
             ],
             [
                 'id' => 8,
@@ -111,10 +97,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2014,
                 'realisateur' => 7,
                 'producteur' => 8,
-                'lienFilm' => 8,
                 'pochetteURL' => 'https://www.voicesfromthebalcony.com/wp-content/uploads/2022/09/Birdemic-3-Sea-Eagle-Poster.jpg',
                 'rating' => 17,
-                'type_id' => 8,
             ],
             [
                 'id' => 9,
@@ -124,10 +108,8 @@ class FilmsSeeder extends Seeder
                 'annee' => 2019,
                 'realisateur' => 8,
                 'producteur' => 9,
-                'lienFilm' => 9,
                 'pochetteURL' => 'https://th.bing.com/th/id/R.ff7394c2143acd6f4f777f2f05e42885?rik=JUyg4UZWvRzCmg&pid=ImgRaw&r=0',
                 'rating' => 62,
-                'type_id' => 9,
             ]
             ,
             [
@@ -137,12 +119,9 @@ class FilmsSeeder extends Seeder
                 'duree' => 136,
                 'annee' => 1999,
                 'realisateur' => 9,
-                'realisateur' => 10,
                 'producteur' => 10,
-                'lienFilm' => 10,
                 'pochetteURL' => 'https://m.media-amazon.com/images/I/613ypTLZHsL._AC_UF1000,1000_QL80_.jpg',
                 'rating' => 83,
-                'type_id' => 10,
             ]
  
         ]);  
