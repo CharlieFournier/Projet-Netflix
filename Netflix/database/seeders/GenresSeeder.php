@@ -19,8 +19,9 @@ class GenresSeeder extends Seeder
         ['genre' => 'Horreur'],
         ['genre' => 'Action'],
         ['genre' => 'Comedie'],
-        ['genre' => 'Drama'],
-        ['genre' => 'Romance']
+        ['genre' => 'Dramatique'],
+        ['genre' => 'Romance'],
+        ['genre' => 'Thriller']
         ]); 
 
     }
