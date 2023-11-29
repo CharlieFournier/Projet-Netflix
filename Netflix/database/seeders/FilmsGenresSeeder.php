@@ -28,6 +28,11 @@ class FilmsGenresSeeder extends Seeder
                 'id' => 3,
                 'film_id' => 3,
                 'genre_id' => 1
+            ],
+            [
+                'id' => 4,
+                'film_id' => 11,
+                'genre_id' => 4
             ]
         ]);
     }

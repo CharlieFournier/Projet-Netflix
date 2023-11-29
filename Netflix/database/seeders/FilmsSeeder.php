@@ -123,7 +123,18 @@ class FilmsSeeder extends Seeder
                 'pochetteURL' => 'https://m.media-amazon.com/images/I/613ypTLZHsL._AC_UF1000,1000_QL80_.jpg',
                 'rating' => 83,
             ]
- 
+            ,
+            [
+                'id' => 11,
+                'titre' => 'Five Nights at Freddy\'s',
+                'resumer' => 'Très drôle',
+                'duree' => 109,
+                'annee' => 2023,
+                'realisateur' => 9,
+                'producteur' => 10,
+                'pochetteURL' => 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Five_Nights_At_Freddy%27s_poster.jpeg/220px-Five_Nights_At_Freddy%27s_poster.jpeg',
+                'rating' => 55,
+            ]
         ]);  
     }
 }
