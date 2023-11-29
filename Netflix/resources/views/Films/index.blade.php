@@ -19,20 +19,25 @@
 
 
     @if (count($films))
-    @foreach($genres as $genre)
 
-        @foreach($genre->films as $film)
+        @foreach($genres as $genre)
 
-        <h1> {{$genre->genre}}</h1>
-        <div class="box">
+            @if(count($genre->films))
 
-                <a href="{{route('film.show', [$film->titre])}}">    <img src="{{$film->pochetteURL}}" alt="" width="200px"> </a>
+                <h1> {{$genre->genre}}</h1>
+                <div class="box">
 
-                
-        
+                    @foreach($genre->films as $film)
+                    
+                            <a href="{{route('film.show', [$film->titre])}}">    <img src="{{$film->pochetteURL}}" alt="" width="200px"> </a>                
+                    
+                    @endforeach
+
+                </div>
+
+            @endif
+            
         @endforeach
-        </div>
-    @endforeach
     
         @else
             <p>il n'y a pas de films</p>
