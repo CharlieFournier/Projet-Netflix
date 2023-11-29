@@ -16,25 +16,25 @@
       <input type="text" class="form-control" value="{{ old('titre', $film->titre) }}"  name="titre">
 
        <label for="">Resume du film</label>
-       <input type="text" class="form-control" name="resumer">
+       <input type="text" class="form-control" value="{{ old('resumer', $film->resumer) }}" name="resumer">
 
        <label for="">Duree du film</label>
-       <input type="text" class="form-control" name="duree">
+       <input type="text" class="form-control" value="{{ old('duree', $film->duree) }}" name="duree">
 
        <label for="">Annee du film</label>
-       <input type="text" class="form-control" name="annee">
+       <input type="text" class="form-control" value="{{ old('annee', $film->annee) }}" name="annee">
 
        <label for="">Realisateur du film</label>
-       <input type="text" class="form-control" name="realisateur">
+       <input type="text" class="form-control" value="{{ old('ralisateur', $film->realisateur) }}" name="realisateur">
 
        <label for="">Producteur du film</label>
-       <input type="text" class="form-control" name="producteur">
+       <input type="text" class="form-control" value="{{ old('producteur', $film->producteur) }}" name="producteur">
 
        <label for="">Url du film</label>
-       <input type="text" class="form-control" name="pochetteURL">
+       <input type="text" class="form-control" value="{{ old('pochetteURL', $film->pochetteURL) }}" name="pochetteURL">
 
        <label for="">Rating du film</label>
-       <input type="text" class="form-control" name="rating">
+       <input type="text" class="form-control" value="{{ old('rating', $film->rating) }}" name="rating">
        
    </div>
 
