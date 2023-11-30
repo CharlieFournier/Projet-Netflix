@@ -31,7 +31,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2014,
                 'realisateur' => 2,
                 'producteur' => 2,
-                'pochetteURL' => 'https://th.bing.com/th/id/OIP.GaeD0arCSn1Nn8wFJH5XyAHaLH?w=121&h=182&c=7&r=0&o=5&pid=1.7',
+                'pochetteURL' => 'https://www.ecranlarge.com/uploads/image/001/150/bwhdtmuk1imqxhrgtx2hpusabwr-586.jpg',
                 'rating' => 94,
             ],
             [

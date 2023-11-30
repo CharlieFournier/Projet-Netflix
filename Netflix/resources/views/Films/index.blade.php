@@ -5,7 +5,7 @@
 @section('contenu')
 
     @if (count($films))
-    <h1> Recommendations </h1>
+    <h1> Recommandations </h1>
     <div class="box">
         @foreach($films as $film)
         
