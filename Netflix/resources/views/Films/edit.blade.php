@@ -12,7 +12,6 @@
    <div class="form-group">
 
       <label for="">Nom du film</label>
-      
       <input type="text" class="form-control" value="{{ old('titre', $film->titre) }}"  name="titre">
 
        <label for="">Resume du film</label>

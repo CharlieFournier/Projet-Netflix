@@ -104,6 +104,7 @@ class FilmsController extends Controller
             $film = Film::findOrFail($id);
             
             $film->acteurs()->detach();
+            $film->genres()->detach();
                     
               $film->delete();
                            return redirect()->route('films.index')->with('message', "Suppression de " . $film->nom . " réussi!");
