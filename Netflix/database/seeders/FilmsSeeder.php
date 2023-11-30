@@ -132,7 +132,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2023,
                 'realisateur' => 9,
                 'producteur' => 10,
-                'pochetteURL' => 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Five_Nights_At_Freddy%27s_poster.jpeg/220px-Five_Nights_At_Freddy%27s_poster.jpeg',
+                'pochetteURL' => 'https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/five-nights-at-freddys-film-poster.jpg',
                 'rating' => 55,
             ]
         ]);  
