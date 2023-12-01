@@ -55,17 +55,34 @@ class PersonnesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($personneNom)
     {
-        //
+        $personne = Personne::where('nom', $personneNom)->firstOrFail();
+        return View('Personnes.edit', compact('personne'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $personneNom)
     {
-        //
+        $personne = Personne::where('nom', $personneNom)->firstOrFail();
+        try{
+                $personne->nom = $request->nom;
+                $personne->date = $request->date;
+                $personne->photo = $request->photo;
+
+
+                $personne->save();
+                return redirect()->route('personnes.index')->with('message', "Modification de " . $personne->nom . " réussi!");
+            }
+            catch(\Throwable $e){
+                //Gérer l'erreur
+                Log::debug($e);
+                return redirect()->route('personnes.index')->withErrors(['la modification n\'a pas fonctionné']); 
+            }
+            return redirect()->route('personnes.index');
+            
     }
 
     /**

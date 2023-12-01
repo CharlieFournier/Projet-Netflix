@@ -54,3 +54,8 @@ Route::post('/acteur',
 Route::delete('/acteur/{id}',
 [PersonnesController::class, 'destroy'])->name('personnes.destroy');
 
+Route::get('/acteur/modifier/{Personne}', 
+[PersonnesController::class, 'edit'])->name('personnes.edit');
+
+Route::patch('/acteur/modifier/{Personne}',
+[PersonnesController::class, 'update'])->name('personnes.update');

@@ -11,6 +11,9 @@
         <a href="{{route('film.show', [$film->titre])}}"><img src="{{$film->pochetteURL}}" width="200px"></a>
     @endforeach
 
+    <a href="{{ route('personnes.edit', [$personne->nom]) }}" class="btn btn-primary">
+        Editer la personne
+    </a>
     
     <form method="POST" action="{{route('personnes.destroy', [$personne->id]) }}">
     @csrf
