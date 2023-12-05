@@ -17,37 +17,37 @@ class PersonnesSeeder extends Seeder
                 'id' => 1,
                 'nom' => 'Edgar Wright',
                 'date' => '1974-04-18',
-                'photo' => 'https://th.bing.com/th/id/OIP.t_V68JZejEfG8A-QK7D97wHaE7?pid=ImgDet&rs=1'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BMTMxMjgyMjQ4NF5BMl5BanBnXkFtZTcwMTU0ODk2Mw@@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 2,
                 'nom' => 'Damien Chazelle',
                 'date' => '1985-01-19',
-                'photo' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Damien_Chazelle_%28cropped%29.jpg/640px-Damien_Chazelle_%28cropped%29.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BMjE2MzcyODA3MV5BMl5BanBnXkFtZTgwNTA3NTU2MjE@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 3,
                 'nom' => 'Christopher Nolan',
                 'date' => '1970-07-30',
-                'photo' => 'https://phantom-marca.unidadeditorial.es/c7327f7fc30cb4757be34501b9aa07a4/resize/828/f/jpg/assets/multimedia/imagenes/2023/07/29/16906452894987.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BNjE3NDQyOTYyMV5BMl5BanBnXkFtZTcwODcyODU2Mw@@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 4,
                 'nom' => 'Greg Berlanti',
                 'date' => '1972-05-24',
-                'photo' => 'https://variety.com/wp-content/uploads/2022/05/Greg-Berlanti-Walk-of-Fame-Honor.jpg?w=1000'
+                'photo' => 'https://static.wikia.nocookie.net/doompatrol/images/8/80/Greg_Berlanti.png/revision/latest?cb=20200329111706'
             ],
             [
                 'id' => 5,
                 'nom' => 'Simon McQuoid',
                 'date' => '1984-04-23',
-                'photo' => 'https://th.bing.com/th?id=OSK.136b1de95cc556d504238b2df77a2f9e&w=120&h=120&c=12&o=6&pid=SANGAM'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BOTA0Y2JhY2MtZWU4YS00ZTk5LWFlNzYtYjg4ZGRkODA3NThhXkEyXkFqcGdeQXVyMjkzNTU5OQ@@._V1_.jpg'
             ],
             [
                 'id' => 6,
                 'nom' => 'Dan Trachtenberg',
                 'date' => '1974-04-18',
-                'photo' => 'https://hips.hearstapps.com/hmg-prod/images/dan-trachtenberg-649d7815a7252.jpg?crop=0.550xw:0.375xh;0.254xw,0.116xh&resize=980:*'
+                'photo' => 'https://www.themoviedb.org/t/p/w500/ce3rCLjSPyvq89D9kd2pyIlLny1.jpg'
             ],
             [
                 'id' => 7,
@@ -59,55 +59,55 @@ class PersonnesSeeder extends Seeder
                 'id' => 8,
                 'nom' => 'Robert Rodriguez',
                 'date' => '1968-06-20',
-                'photo' => 'https://ca-times.brightspotcdn.com/dims4/default/7f80c43/2147483647/strip/true/crop/4417x2945+0+0/resize/2400x1600!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd2%2Fe5%2F97f637e442d8b385971d15bdc5c9%2Fla-et-robert-rodriguez-handout-27.JPG'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BMTc0NDg4ODAwNF5BMl5BanBnXkFtZTgwMTIxNTA0MjE@._V1_.jpg'
             ],
             [
                 'id' => 9,
                 'nom' => 'Lana Wachowski',
                 'date' => '1965-06-21',
-                'photo' => 'https://img.lemde.fr/2021/12/20/0/0/2095/3000/664/0/75/0/23c58f3_379763005-063-1359828195.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BMjEzMTc2MDQ5OV5BMl5BanBnXkFtZTcwNjkzNDY0OA@@._V1_.jpg'
             ],
             [
                 'id' => 10,
                 'nom' => 'Lilly Watchwoski',
                 'date' => '1967-12-29',
-                'photo' => 'https://media.them.us/photos/5fa09cf7fd7a2bab06d4a061/16:9/w_1280,c_limit/GettyImages-1159247758%20(1).jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BMTU1Mjc1MjkzNV5BMl5BanBnXkFtZTgwOTc1NDQ1ODE@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 11,
                 'nom' => 'Keanu Reeves',
                 'date' => '1964-09-02',
-                'photo' => 'https://cdn.britannica.com/11/215011-050-3127A07E/American-actor-Keanu-Reeves-2014.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg'
             ],
             [
                 'id' => 12,
                 'nom' => 'Michael Cera',
                 'date' => '1988-06-07',
-                'photo' => 'https://www.themoviedb.org/t/p/w500/lFKyW2C7xj7X4nWpOEbVIDGOKrH.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BNTgyNDgxMjUyOV5BMl5BanBnXkFtZTcwMDYxNzY1OQ@@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 13,
                 'nom' => 'Miles Teller ',
                 'date' => '1987-02-20',
-                'photo' => 'https://ew.com/thmb/2JPWFgcSfeqjKrlt5GDPfIO70PY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/divergent-miles-teller-a500fb878d9d4fbf8c0e0c972b0dab85.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BM2ZiYThiZTUtYmM0ZS00ZWQzLTgzMTEtZWY1ZDkwNWM4ZGNmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg'
             ],
             [
                 'id' => 14,
                 'nom' => 'Matthew McConaughey',
                 'date' => '1969-11-04',
-                'photo' => 'https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/07/918/516/Matthew-McConaughey-young.jpg?ve=1&tl=1'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 15,
                 'nom' => 'John David Washington',
                 'date' => '1984-07-28',
-                'photo' => 'https://www.themoviedb.org/t/p/w500/qoOp8XvZ4v7B0C9ZmtoRCl9CDSO.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BOTY4NDcyNDM5OF5BMl5BanBnXkFtZTgwMjk4Mzk0NTM@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 16,
                 'nom' => 'Ezra Miller',
                 'date' => '1992-09-30',
-                'photo' => 'https://i.guim.co.uk/img/media/1bbbdb636e4555d95fb22b865cdef8e435bba902/0_26_4742_2847/master/4742.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=cb9aa60b7aea7f5634b7c593316d8a12'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BOTQ2YmNlZDEtM2EwNi00N2JhLTk3ZDktMjBmNzYwYWI1OWZmXkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 17,
@@ -117,9 +117,9 @@ class PersonnesSeeder extends Seeder
             ],
             [
                 'id' => 18,
-                'nom' => 'Hiroyuki Sanada',
-                'date' => '1992-09-30',
-                'photo' => 'https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1623950765561-9T5DT4NDM8XBNX2ZSDFW/hiroyuki+sanada.jpg'
+                'nom' => 'Danny Trejo',
+                'date' => '1944-05-16',
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BMzcxNTQ1ODQxMl5BMl5BanBnXkFtZTYwMzI4MDA2._V1_FMjpg_UX1000_.jpg'
             ],
             [
                 'id' => 19,
@@ -131,7 +131,7 @@ class PersonnesSeeder extends Seeder
                 'id' => 20,
                 'nom' => 'Rosa Salazar',
                 'date' => '1985-07-16',
-                'photo' => 'https://i.pinimg.com/564x/fd/80/1b/fd801ba89f0528ec5791bbeb10481dfc.jpg'
+                'photo' => 'https://m.media-amazon.com/images/M/MV5BM2FkNDAwMDItMWQwNy00YzE5LWJiM2EtZmNhZTZjZDk1YmJlXkEyXkFqcGdeQXVyMjQwMTcxMzA@._V1_.jpg'
             ]
         ]);  
     }

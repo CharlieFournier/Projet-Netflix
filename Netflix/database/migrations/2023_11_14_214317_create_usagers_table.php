@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('username','50');
             $table->string('nom','50');
             $table->string('prenom','50');
-            $table->string('role','admin','normal','enfant');
+            $table->string('role','6');
             $table->rememberToken()->nullable();
             $table->timestamps();
         });

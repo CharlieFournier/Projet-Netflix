@@ -4,7 +4,7 @@
 
 @section('contenu')
 
-<h1>Ajouter un film</h1>
+<h1>Ajouter un acteur</h1>
 
 <form method="post" action="{{route('personnes.store')}}">
 @csrf
