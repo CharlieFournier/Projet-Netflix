@@ -15,11 +15,9 @@ return new class extends Migration
             $table->integer('duree');   //tout en minute convertir avec modulo 60.
             $table->year('annee');
 
-            $table->unsignedBigInteger('realisateur');
-            $table->foreign('realisateur')->references('id')->on('personnes');
+            $table->foreignId('realisateur')->constrained('personnes');
+            $table->foreignId('producteur')->constrained('personnes');
 
-            $table->unsignedBigInteger('producteur');
-            $table->foreign('producteur')->references('id')->on('personnes');
 
             $table->string('pochetteURL',1000);
             $table->double('rating');

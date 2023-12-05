@@ -22,11 +22,24 @@
     <div class="col-2"></div>
     </div>
     </div>
+<h2>
+{{
+$film->realisateur->photo 
+    }}
+</h2>
+
+<h2>
+{{
+$film->producteur->photo 
+    }}
+</h2>
+
+
     @foreach($film->acteurs as $acteur)
                 <a href="{{route('personnes.show', [$acteur->nom])}}">
-                    <img src="{{$acteur->photo}}" alt="" width="150px" height="150px">
+                    <img src="{{$acteur->photo}}" alt="" width="150px" height="180px">
                 </a>
-                @endforeach
+    @endforeach
 
     
     @foreach($film->genres as $genre)

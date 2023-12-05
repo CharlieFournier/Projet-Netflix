@@ -117,4 +117,13 @@ class FilmsController extends Controller
                 return redirect()->route('films.index');
             
     }
+
+    /*
+        Transformer personne en realisateur    
+    */
+    public function realisateur($realisateur)
+    {
+        $realisateur = Personne::where('id', $realisateur)->firstOrFail();
+        return View('films.realisateur', compact('film'));
+    }
 }
