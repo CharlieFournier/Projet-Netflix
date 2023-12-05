@@ -9,12 +9,12 @@
 <!-- <form method="post" action="{{route('films.index')}}"> -->
 @csrf
 
-    <label for="">username</label>
+    <label for="">username</label><br>
     <input type="text" name="nom">
 
     <br>
 
-    <label for="">password&nbsp</label>
+    <label for="">password</label><br>
     <input type="password" name="password">
 
     <br><br>
