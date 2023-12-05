@@ -6,11 +6,11 @@
 
 <h1>Connexion</h1>
 
-<form method="get" action="{{route('usagers.login')}}">
+<form method="post" action="{{route('usagers.login')}}">
 @csrf
 
-    <label for="">username</label><br>
-    <input type="text" name="nom">
+    <label for="">email</label><br>
+    <input type="text" name="email">
 
     <br>
 

@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\Usager;
+use Auth;
 
 class UsagersController extends Controller
 {
@@ -30,7 +31,16 @@ class UsagersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $usagers = new Usager($request->all());
+            Log::debug($usagers);
+            $usagers->save();
+                }
+               
+            catch (\Throwable $e) {
+                Log::debug($e);
+            }
+            return redirect()->route('usager.index');
     }
 
     /**
@@ -72,7 +82,7 @@ class UsagersController extends Controller
             return redirect()->route('films.index') ->with('message', "Connexion réussie");
         }
         else{
-            return redirect()->route('login')->withErrors(['Informations invalides']); 
+            return redirect()->route('usagers.index')->withErrors(['Informations invalides']); 
         }
         
     }
