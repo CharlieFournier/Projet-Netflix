@@ -66,8 +66,8 @@ Route::patch('/acteur/modifier/{Personne}',
 
 ###-----------------------------------------------------------------
 
-Route::get('/login', 
-[UsagersController::class, 'index'])->name('usagers.login');
+Route::get('/Connexion', 
+[UsagersController::class, 'index'])->name('usagers.index');
 
-Route::get('/login', 
-[UsagersController::class, 'login']);
+Route::post('/login', 
+[UsagersController::class, 'login'])->name('usagers.login');
