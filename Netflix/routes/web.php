@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FilmsController;
 use App\Http\Controllers\PersonnesController;
 use App\Http\Controllers\GenresController;
+use App\Http\Controllers\UsagersController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +41,8 @@ Route::get('/films/modifier/{film}',
 Route::patch('/films/modifier/{film}',
 [FilmsController::class, 'update'])->name('films.update');
 
+###-----------------------------------------------------------------
+
 Route::get('/acteur', 
 [PersonnesController::class, 'index'])->name('personnes.index');
 
@@ -59,3 +63,8 @@ Route::get('/acteur/modifier/{Personne}',
 
 Route::patch('/acteur/modifier/{Personne}',
 [PersonnesController::class, 'update'])->name('personnes.update');
+
+###-----------------------------------------------------------------
+
+Route::get('/Connexion', 
+[UsagersController::class, 'index'])->name('users.login');

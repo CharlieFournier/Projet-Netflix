@@ -32,7 +32,7 @@
       <nav class="sub-nav">
         <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
         <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-        <a href="#">Account</a>        
+        <a href="/Connexion">Account</a>        
       </nav>      
     </header>
     <!-- END OF HEADER -->
