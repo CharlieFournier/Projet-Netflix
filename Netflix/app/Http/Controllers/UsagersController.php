@@ -64,4 +64,17 @@ class UsagersController extends Controller
     {
         //
     }
+
+    public function login(Request $request)
+    {
+        $reussi = Auth::attempt(['email' => $request->email, 'password' => $request->password]);
+        if($reussi){
+            return redirect()->route('films.index') ->with('message', "Connexion réussie");
+        }
+        else{
+            return redirect()->route('login')->withErrors(['Informations invalides']); 
+        }
+        
+    }
+
 }

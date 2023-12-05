@@ -6,7 +6,7 @@
 
 <h1>Connexion</h1>
 
-<!-- <form method="post" action="{{route('films.index')}}"> -->
+<form method="get" action="{{route('usagers.login')}}">
 @csrf
 
     <label for="">username</label><br>
@@ -20,6 +20,6 @@
     <br><br>
 
 <button type="submit" class="btn btn-primary">Connexion</button>
-<!-- </form> -->
+</form>
 
 @endsection
