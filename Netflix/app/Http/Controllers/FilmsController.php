@@ -53,7 +53,7 @@ class FilmsController extends Controller
      */
     public function show($filmTitre)
     {
-        $film = Film::where('titre', $filmTitre)->firstOrFail();
+        $film = Film::with('realisateur')->where('titre', $filmTitre)->firstOrFail();
         return view('films.show', compact('film'));
     }
 
@@ -118,12 +118,5 @@ class FilmsController extends Controller
             
     }
 
-    /*
-        Transformer personne en realisateur    
-    */
-    public function realisateur($realisateur)
-    {
-        $realisateur = Personne::where('id', $realisateur)->firstOrFail();
-        return View('films.realisateur', compact('film'));
-    }
+
 }

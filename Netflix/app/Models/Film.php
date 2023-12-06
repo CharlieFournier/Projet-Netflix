@@ -20,10 +20,11 @@ function acteurs(){
 function genres(){
     return $this->belongsToMany(genre::class);
 }
-function realisateur(){
-    return $this->belongsTo(Personne::class,'realisateur');
+public function realisateur(){
+    return $this->belongsTo(Personne::class, 'realisateur');
 }
-function producteur(){
-    return $this->belongsTo(Personne::class,'producteur');
+
+public function producteur(){
+    return $this->belongsTo(Personne::class, 'producteur');
 }
 }
