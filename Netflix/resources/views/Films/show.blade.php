@@ -36,6 +36,8 @@
                 <a href="{{ route('personnes.show', [$acteur->nom]) }}">
                     <img src="{{ $acteur->photo }}" alt="" width="150px" height="180px">
                 </a>
+                <p>{{ $acteur->nom }}</p>
+
             @endforeach
             <h2>Genre:</h2>
             @foreach($film->genres as $genre)
