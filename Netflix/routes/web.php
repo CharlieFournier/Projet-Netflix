@@ -16,7 +16,7 @@ use App\Http\Controllers\UsagersController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+*/ 
 
 // de quoi de simple
 
