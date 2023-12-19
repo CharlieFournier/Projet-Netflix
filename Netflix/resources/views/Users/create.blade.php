@@ -6,18 +6,18 @@
 
 <h1>Ajouter un utilisateur</h1>
 
-<form method="post" action="{{route('users.store')}}">
+<form method="post" action="{{route('usagers.store')}}">
 @csrf
 <div class="form-group">
 
 <label for="nomUtilisateur">Prenom'</label>
-<input type="text" class="form-control" name="nom">
+<input type="text" class="form-control" name="prenom">
 
 <label for="nom">Nom '</label>
 <input type="text" class="form-control" name="nom">
 
 <label for="prenom">Nom d'utilisateur'</label>
-<input type="text" class="form-control" name="nom">
+<input type="text" class="form-control" name="username">
 
 <div class="form-group">
       <label for="email">Adresse e-mail</label>
@@ -25,12 +25,12 @@
 </div>
 
 <label for="password">Mot de passe</label>
-<input type="date" class="form-control" name="password">
+<input type="password" class="form-control" name="password">
 
 <div class="form-group">
    <label for="role">Rôle:</label><br>
-   <input type="checkbox" name="role" value="enfant"> Enfant
-   <input type="checkbox" name="role" value="normal"> Normal
+   <input type="radio" name="role" value="enfant"> Enfant
+   <input type="radio" name="role" value="normal"> Normal
 </div>
 
 

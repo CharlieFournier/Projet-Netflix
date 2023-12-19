@@ -67,9 +67,22 @@ Route::patch('/acteur/modifier/{Personne}',
 ###-----------------------------------------------------------------
 
 Route::get('/Connexion', 
+[UsagersController::class, 'pagelogin'])->name('usagers.pagelogin');
+
+Route::get('/user/index', 
 [UsagersController::class, 'index'])->name('usagers.index');
 
 Route::post('/login', 
 [UsagersController::class, 'login'])->name('usagers.login');
 
-Route::get('/user/creation',[UsagersController::class, 'create'])->name('usagers.create');
+Route::get('/user/creation',
+[UsagersController::class, 'create'])->name('usagers.create');
+
+Route::post('/user',
+[UsagersController::class, 'store'])->name('usagers.store');
+
+Route::delete('/user/{id}',
+[UsagersController::class, 'destroy'])->name('usagers.destroy');
+
+Route::get('/user/show/{usager}', 
+[UsagersController::class, 'show'])->name('usagers.show');

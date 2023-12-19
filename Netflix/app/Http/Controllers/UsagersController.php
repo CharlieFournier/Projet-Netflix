@@ -13,9 +13,16 @@ class UsagersController extends Controller
     /**
      * Display a listing of the resource.
      */
+
+    public function pagelogin()
+    {
+         return View('Users.login');
+    }
+
     public function index()
     {
-        return View('Users.login');
+        $usagers = usager::all();
+        return view('users.liste', compact('usagers'));
     }
 
     /**
@@ -39,15 +46,15 @@ class UsagersController extends Controller
             catch (\Throwable $e) {
                 Log::debug($e);
             }
-            return redirect()->route('usager.index');
+            return redirect()->route('usagers.index');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show($usagerUsername)
     {
-        $usager = Usager::findOrFail($id);
+        $usager = Usager::where('username', $usagerUsername)->firstOrFail();
         return view('Users.show', compact('usager'));
     }
 
@@ -97,7 +104,7 @@ class UsagersController extends Controller
             return redirect()->route('films.index') ->with('message', "Connexion réussie");
         }
         else{
-            return redirect()->route('usagers.index')->withErrors(['Informations invalides']);
+            return redirect()->route('usagers.pagelogin')->withErrors(['Informations invalides']);
         }
         
     }
