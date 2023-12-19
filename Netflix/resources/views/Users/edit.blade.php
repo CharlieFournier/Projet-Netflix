@@ -20,7 +20,7 @@
        <label for="">URL photo</label>
        <input type="text" class="form-control" value="{{ old('photo', $personne->photo) }}" name="photo">
        
-   </div>
+   </div> 
 
 <button type="submit" class="btn btn-primary">Enregistrer</button>
 </form>
