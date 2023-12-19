@@ -61,18 +61,18 @@ class UsagersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $usagerUsername)
     {
-        $usager = Usager::findOrFail($id);
+        $usager = Usager::where('username', $usagerUsername)->firstOrFail();
         return view('Users.edit', compact('usager'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $usagerUsername)
     {
-        $usager = Usager::findOrFail($id);
+        $usager = Usager::where('username', $usagerUsername)->firstOrFail();
         try {
             $usager->update($request->all());
             return redirect()->route('usagers.index')->with('message', "Mise à jour de l'utilisateur réussie!");

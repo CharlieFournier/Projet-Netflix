@@ -86,3 +86,9 @@ Route::delete('/user/{id}',
 
 Route::get('/user/show/{usager}', 
 [UsagersController::class, 'show'])->name('usagers.show');
+
+Route::get('/user/modifier/{usager}', 
+[UsagersController::class, 'edit'])->name('usagers.edit');
+
+Route::patch('/user/modifier/{usager}',
+[UsagersController::class, 'update'])->name('usagers.update');

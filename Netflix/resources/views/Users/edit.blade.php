@@ -6,19 +6,25 @@
 
 <h1>modifier un Utilisateur</h1>
 
-<form method="post" action="{{route('personnes.update', [$personne->nom])}}">
+<form method="post" action="{{route('usagers.update', [$usager->username])}}">
 @csrf
  @method('PATCH')
    <div class="form-group">
 
-      <label for="">Nom de l'acteur </label>
-      <input type="text" class="form-control" value="{{ old('nom', $personne->nom) }}"  name="nom">
+      <label for="">Username </label>
+      <input type="text" class="form-control" value="{{ old('username', $usager->username) }}" disabled  name="nom">
 
-       <label for="">date de naissance</label>
-       <input type="date" class="form-control" value="{{ old('date', $personne->date) }}" name="date">
+       <label for="">mot de passe</label>
+       <input type="password" class="form-control" value="" name="password">
 
-       <label for="">URL photo</label>
-       <input type="text" class="form-control" value="{{ old('photo', $personne->photo) }}" name="photo">
+       <label for="">Email</label>
+       <input type="text" class="form-control" value="{{ old('email', $usager->email) }}" name="email">
+
+       <label for="">Prenom</label>
+       <input type="text" class="form-control" value="{{ old('prenom', $usager->prenom) }}" name="prenom">
+
+       <label for="">Nom</label>
+       <input type="text" class="form-control" value="{{ old('nom', $usager->nom) }}" name="nom">
        
    </div> 
 
