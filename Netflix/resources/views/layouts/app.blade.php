@@ -16,8 +16,8 @@
     <header>
       <div class="netflixLogo">
         <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
-      </div>      
-      <nav class="main-nav">                
+      </div>
+      <nav class="main-nav">
         <a href="/">Home</a>
         <a href="/acteur">Acteurs</a>
         <a href="#">New release</a>
@@ -26,14 +26,16 @@
         <a href="#">Comédie</a>
         <a href="#">Plus Populaire</a>
         <a href="#">Moins Populaire</a>
-        <a href="/film/creation">test ajout film</a>    
-        <a href="/acteur/creation">test ajout acteur</a>         
+        <a href="/film/creation"> ajout film</a>
+        <a href="/acteur/creation"> ajout acteur</a>
+        <a href="/user/creation"> ajout utilisateur</a>
+
       </nav>
       <nav class="sub-nav">
         <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
         <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-        <a href="/Connexion">Account</a>        
-      </nav>      
+        <a href="/Connexion">Account</a>
+      </nav>
     </header>
     <!-- END OF HEADER -->
     <div style="padding-top: 62px;">

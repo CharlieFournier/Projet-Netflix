@@ -71,3 +71,5 @@ Route::get('/Connexion',
 
 Route::post('/login', 
 [UsagersController::class, 'login'])->name('usagers.login');
+
+Route::get('/user/creation',[UsagersController::class, 'create'])->name('usagers.create');

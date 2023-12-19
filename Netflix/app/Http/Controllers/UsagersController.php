@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Usager;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class UsagersController extends Controller
 {
@@ -23,7 +23,7 @@ class UsagersController extends Controller
      */
     public function create()
     {
-        //
+        return View('Users.create');
     }
 
     /**
@@ -36,7 +36,6 @@ class UsagersController extends Controller
             Log::debug($usagers);
             $usagers->save();
                 }
-               
             catch (\Throwable $e) {
                 Log::debug($e);
             }
@@ -46,9 +45,10 @@ class UsagersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $usager = Usager::findOrFail($id);
+        return view('Users.show', compact('usager'));
     }
 
     /**
@@ -56,7 +56,8 @@ class UsagersController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $usager = Usager::findOrFail($id);
+        return view('Users.edit', compact('usager'));
     }
 
     /**
@@ -64,7 +65,14 @@ class UsagersController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $usager = Usager::findOrFail($id);
+        try {
+            $usager->update($request->all());
+            return redirect()->route('usagers.index')->with('message', "Mise à jour de l'utilisateur réussie!");
+        } catch (\Throwable $e) {
+            Log::error($e);
+            return redirect()->route('usagers.index')->withErrors(['La mise à jour de l\'utilisateur n\'a pas fonctionné']);
+        }
     }
 
     /**
@@ -72,7 +80,14 @@ class UsagersController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        try {
+            $usager = Usager::findOrFail($id);
+            $usager->delete();
+            return redirect()->route('usagers.index')->with('message', "Suppression de l'utilisateur réussie!");
+        } catch (\Throwable $e) {
+            Log::error($e);
+            return redirect()->route('usagers.index')->withErrors(['La suppression de l\'utilisateur n\'a pas fonctionné']);
+        }
     }
 
     public function login(Request $request)
@@ -82,7 +97,7 @@ class UsagersController extends Controller
             return redirect()->route('films.index') ->with('message', "Connexion réussie");
         }
         else{
-            return redirect()->route('usagers.index')->withErrors(['Informations invalides']); 
+            return redirect()->route('usagers.index')->withErrors(['Informations invalides']);
         }
         
     }
